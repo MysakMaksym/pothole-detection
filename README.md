@@ -11,5 +11,4 @@ cd pothole-detection
 
  python camera_video.py
 
-Open Demo.mp4 to see the results.
 
