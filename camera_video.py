@@ -21,7 +21,7 @@ model1.setInputParams(size=(640, 480), scale=1/255, swapRB=True)
 cap = cv.VideoCapture("test_video.mp4")
 width  = cap.get(3)
 height = cap.get(4)
-result = cv.VideoWriter('result.avi', 
+result = cv.VideoWriter('result_video.avi',
                          cv.VideoWriter_fourcc(*'MJPG'),
                          10,(int(width),int(height)))
 

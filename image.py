@@ -3,7 +3,7 @@ import cv2
 import os
 
 #reading test image
-img = cv2.imread("test_image9.jpg") #image name
+img = cv2.imread("test_image.jpg") #image name
 
 #reading label name from obj.names file
 with open(os.path.join("project_files",'obj.names'), 'r') as f:
@@ -21,6 +21,6 @@ for (classId, score, box) in zip(classIds, scores, boxes):
                   color=(0, 255, 0), thickness=2)
  
 cv2.imshow("pothole",img)
-cv2.imwrite("result1"+".jpg",img) #result name
+cv2.imwrite("result_image"+".jpg",img) #result name
 cv2.waitKey(0)
 cv2.destroyAllWindows()
